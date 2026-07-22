@@ -1,0 +1,82 @@
+# ---------- Rust / Tauri ----------
+src-tauri/target/
+src-tauri/Cargo.lock
+!src-tauri/Cargo.lock
+**/*.rs.bk
+*.pdb
+
+# Tauri build output
+src-tauri/gen/
+src-tauri/WixTools/
+
+# ---------- Node / React frontend ----------
+node_modules/
+dist/
+dist-ssr/
+build/
+.vite/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------- Python sidecar ----------
+sidecar/.venv/
+sidecar/venv/
+sidecar/__pycache__/
+sidecar/**/__pycache__/
+sidecar/*.pyc
+sidecar/build/
+sidecar/dist/
+sidecar/*.spec.bak
+.python-version
+
+# PyInstaller
+*.spec
+!sidecar/build_sidecar.spec
+
+# ---------- Downloaded ML models (large, fetched at runtime) ----------
+models/
+sidecar/models/
+*.bin
+*.ct2
+*.pt
+*.onnx
+
+# ---------- App runtime / user data (never ship user data in the repo) ----------
+*.db
+*.sqlite
+*.sqlite3
+recordings/
+*.wav
+*.opus
+!docs/**/*.wav
+
+# ---------- Env / secrets ----------
+.env
+.env.local
+*.token
+hf_token.txt
+
+# ---------- OS files ----------
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ---------- Editor / IDE ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---------- Logs ----------
+*.log
+logs/
+
+# ---------- CI / release artifacts ----------
+*.msi
+*.dmg
+*.AppImage
+*.deb
+release/
