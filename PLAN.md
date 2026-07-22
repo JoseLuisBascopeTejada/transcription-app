@@ -217,7 +217,6 @@ meeting-transcriber/
 │   └── CONTRIBUTING.md
 ├── LICENSE                  # MIT
 ├── README.md
-├── SKILLS.md
 └── PLAN.md                  # this file
 ```
 
